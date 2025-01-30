@@ -1,0 +1,50 @@
+name: myapp
+description: "A new Flutter project."
+
+# Prevent package from being published to pub.dev
+publish_to: 'none'
+
+# Versioning
+version: 1.0.0+1
+
+# Flutter SDK and Dart environment
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8 # iOS style icons
+
+  # Tambahan dependensi yang umum digunakan
+  provider: ^6.0.5          # State management
+  http: ^1.1.1             # HTTP requests
+  shared_preferences: ^2.2.2 # Local storage
+  flutter_localizations:   # Untuk mendukung multiple languages
+    sdk: flutter
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0    # Linting untuk praktik terbaik
+
+flutter:
+  uses-material-design: true
+
+  # Uncomment dan tambahkan aset jika diperlukan
+  assets:
+    - assets/audio/
+    - assets/images/
+    
+  # musicappture: 
+  #   path: ./relative/path/to/musicappture
+
+  
+
+  # Uncomment dan tambahkan font kustom jika diperlukan
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: fonts/CustomFont-Regular.ttf
+  #       - asset: fonts/CustomFont-Bold.ttf
